@@ -31,7 +31,7 @@ Desenvolver um sistema web de locação de veículos com API REST em Node.js e E
 - Finalização da locação e atualização da disponibilidade do veículo
 - Restrição de acesso as páginas 
 
-### Tecnologias
+## Tecnologias
 - Backend: Node.js e Express
 - Front: React e JavaScript ou TypeScript =========================================
 - ORM: Prisma
@@ -47,13 +47,21 @@ Desenvolver um sistema web de locação de veículos com API REST em Node.js e E
 
 ## Instalação
 - Instalar as dependências
+
   Back
   ``cd backend``
-  ``npm install``
+    
+    Para iniciar o projeto
+    ``npm init -y``
+    ``npm install express @prisma/client bcrypt jsonwebtoken dotenv cors``
+    ``npm install -D nodemon prisma``
+
+    Comando para instar
+    ``npm install``
 
   Front
   ``cd front``
-  ``npm install``
+    ``npm install``
 
 ## Configuração do banco
 - Criar um arquilo .env com a URL de conexão e as variáveis;
@@ -62,6 +70,7 @@ Desenvolver um sistema web de locação de veículos com API REST em Node.js e E
 - ``npx prisma migrate deploy``
 
 ## Passos para iniciar backend e frontend. 
+
 Back
 - ``npm run dev``
 - Tem que configurar no package.json
@@ -70,4 +79,4 @@ Back
 Front
 - ``npm run dev``
 - Entrar na URL para visualizar no browser
-- - ou http://localhost:5050
+- ou http://localhost:5050
