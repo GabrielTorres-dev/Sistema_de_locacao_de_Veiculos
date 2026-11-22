@@ -4,7 +4,8 @@
   "description": "- Doglas\r - Gabriel\r - Rean\r - Ryan",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/GabrielTorres-dev/Sistema_de_locacao_de_Veiculos/issues"
   },
@@ -24,7 +25,8 @@
     "cors": "^2.8.6",
     "dotenv": "^18.0.9",
     "express": "^5.3.0",
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^9.0.3",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
