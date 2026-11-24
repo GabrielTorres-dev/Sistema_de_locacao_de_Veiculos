@@ -1,9 +1,9 @@
-# Sistema de Locacao de veiculos.
+# Sistema de Locação de veiculos.
 
 ## Identificação dos integrantes
 - Doglas
 - Gabriel
-- Rean
+- Renan
 - Ryan
 
 ## Objetivo
@@ -33,7 +33,7 @@ Desenvolver um sistema web de locação de veículos com API REST em Node.js e E
 
 ## Tecnologias
 - Backend: Node.js e Express
-- Front: React e JavaScript ou TypeScript =========================================
+- Front: React e JavaScript
 - ORM: Prisma
 - Banco de Dados: MySQL
 - Validação do Banco: .env
@@ -49,18 +49,26 @@ Desenvolver um sistema web de locação de veículos com API REST em Node.js e E
 - Instalar as dependências
 
   Back
-  ``cd backend``
+  
+  ``cd back`` - Entra na pasta back
     
     Para iniciar o projeto
     ``npm init -y``
-    ``npm install express @prisma/client bcrypt jsonwebtoken dotenv cors``
+    ``npm install express``
+    ``npm install ``
+    ``npm install @prisma/client``
+    ``npm install bcrypt``
+    ``npm install jsonwebtoken``
+    ``npm install dotenv``
+    ``npm install cors``
     ``npm install -D nodemon prisma``
 
-    Comando para instar
+    Comando para instar as configurações
     ``npm install``
 
   Front
-  ``cd front``
+  
+  ``cd front``  - Entra na pasta front
     ``npm install``
 
 ## Configuração do banco
