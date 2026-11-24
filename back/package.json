@@ -1,15 +1,14 @@
 {
-  "name": "sistema_de_locacao_de_veiculos",
+  "name": "locacao-veiculos-backend",
   "version": "1.0.0",
-  "description": "- Doglas\r - Gabriel\r - Rean\r - Ryan",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GabrielTorres-dev/Sistema_de_locacao_de_Veiculos.git"
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +28,6 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14",
-    "prisma": "^8.0.0-rc.27"
+    "prisma": "^5.22.0"
   }
 }
