@@ -1,0 +1,266 @@
+:root {
+  --cor-fundo: #f3f4f6;
+  --cor-superficie: #ffffff;
+  --cor-texto: #1f2937;
+  --cor-suave: #6b7280;
+  --cor-primaria: #2563eb;
+  --cor-primaria-escura: #1d4ed8;
+  --cor-borda: #d1d5db;
+  --cor-sucesso: #166534;
+  --cor-sucesso-fundo: #dcfce7;
+  --cor-erro: #991b1b;
+  --cor-erro-fundo: #fee2e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.navbar nav {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+.navbar nav a {
+  color: var(--cor-suave);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+.navbar nav a.active {
+  color: var(--cor-primaria);
+  border-bottom: 2px solid var(--cor-primaria);
+}
+
+.navbar-usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  align-items: end;
+}
+
+.form-grid h2,
+.form-grid .acoes {
+  grid-column: 1 / -1;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+select {
+  padding: 9px 10px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--cor-primaria);
+  border-color: transparent;
+}
+
+button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--cor-primaria);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: var(--cor-primaria-escura);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.botao-secundario {
+  background: transparent;
+  color: var(--cor-primaria);
+  border: 1px solid var(--cor-primaria);
+}
+
+.botao-secundario:hover:not(:disabled) {
+  background: #eff6ff;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 48px auto;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-card p {
+  text-align: center;
+  color: var(--cor-suave);
+}
+
+.mensagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.mensagem button {
+  background: transparent;
+  color: inherit;
+  padding: 0 6px;
+  font-size: 20px;
+}
+
+.mensagem-sucesso {
+  background: var(--cor-sucesso-fundo);
+  color: var(--cor-sucesso);
+}
+
+.mensagem-erro {
+  background: var(--cor-erro-fundo);
+  color: var(--cor-erro);
+}
+
+.barra-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.barra-titulo h2 {
+  margin: 0;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.lista .card {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card-titulo h3 {
+  margin: 0;
+}
+
+.detalhe {
+  margin: 0;
+  color: var(--cor-suave);
+  font-size: 14px;
+}
+
+.detalhe strong {
+  color: var(--cor-texto);
+}
+
+.valor {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-ok {
+  background: var(--cor-sucesso-fundo);
+  color: var(--cor-sucesso);
+}
+
+.badge-alerta {
+  background: var(--cor-erro-fundo);
+  color: var(--cor-erro);
+}
+
+.badge-neutro {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.vazio {
+  text-align: center;
+  color: var(--cor-suave);
+  padding: 24px;
+}

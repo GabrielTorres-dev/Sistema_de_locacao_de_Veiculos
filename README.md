@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 # Sistema de Locação de Veículos
 
 Aplicação web full stack para controle de frota e locações de uma locadora. A API REST foi desenvolvida em Node.js com Express, a persistência usa Prisma ORM com MySQL, a autenticação é baseada em JWT e a interface foi construída em React.
+=======
+# Sistema de Locação de veiculos.
+
+## Identificação dos integrantes
+- Doglas
+- Gabriel
+- Renan
+- Ryan
+>>>>>>> b053a7ce73a6a32fdb9d9fcf18584670cc0c38d7
 
 ## Integrantes
 
@@ -20,10 +30,26 @@ Aplicação web full stack para controle de frota e locações de uma locadora. 
 - Finalização de locação com devolução do veículo à frota
 
 ## Tecnologias
+<<<<<<< HEAD
+=======
+- Backend: Node.js e Express
+- Front: React e JavaScript
+- ORM: Prisma
+- Banco de Dados: MySQL
+- Validação do Banco: .env
+- Autenticaçõa: JWT
+- Criptografia de senhas: bcrypt
+  
+## Requisitos de execução
+- Node.js
+- npm
+- MySQL ou XAMPP
+>>>>>>> b053a7ce73a6a32fdb9d9fcf18584670cc0c38d7
 
 - Backend: Node.js, Express, Prisma ORM, MySQL, JWT (jsonwebtoken), bcrypt, Zod
 - Frontend: React, Vite, React Router, Axios
 
+<<<<<<< HEAD
 ## Requisitos
 
 - Node.js 18 ou superior
@@ -31,6 +57,30 @@ Aplicação web full stack para controle de frota e locações de uma locadora. 
 - Usuário do MySQL com permissão para criar bancos, pois o Prisma usa um banco sombra ao executar `migrate dev`
 
 ## Instalação e execução
+=======
+  Back
+  
+  ``cd back`` - Entra na pasta back
+    
+    Para iniciar o projeto
+    ``npm init -y``
+    ``npm install express``
+    ``npm install ``
+    ``npm install @prisma/client``
+    ``npm install bcrypt``
+    ``npm install jsonwebtoken``
+    ``npm install dotenv``
+    ``npm install cors``
+    ``npm install -D nodemon prisma``
+
+    Comando para instar as configurações
+    ``npm install``
+
+  Front
+  
+  ``cd front``  - Entra na pasta front
+    ``npm install``
+>>>>>>> b053a7ce73a6a32fdb9d9fcf18584670cc0c38d7
 
 ### 1. Backend
 
